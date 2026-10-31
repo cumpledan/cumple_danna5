@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cumpleaños de Danna Rocio · Cazadoras del Honmoon</title>
+<meta name="description" content="Estás invitado/a al cumpleaños de Danna: sábado 7 de noviembre, 16:00, Salón Infantil Chiquimundo.">
+<meta property="og:title" content="¡Danna te invita a su cumpleaños! 🎤✨">
+<meta property="og:description" content="Sábado 7 de noviembre · 16:00 · Salón Infantil Chiquimundo. ¡Ven a cazar demonios con nosotras!">
+<meta property="og:image" content="og-image.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0d0524">
+<link rel="preload" as="image" href="img/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="\1" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="\1" rel="stylesheet"></noscript>
+<!-- Diseño y código: AKCR · Angel Kevin Condori Ramirez -->
+<style>
+:root{
+  --bg:#0d0524; --bg2:#1d0a47; --pink:#ff2e93; --violet:#8b3dff; --cyan:#25e5ff; --gold:#ffd166; --ink:#fff4fb;
+  --display:'Bungee','Impact',sans-serif; --body:'Nunito','Segoe UI',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);font-weight:600;color:var(--ink);background:var(--bg);min-height:100vh;min-height:100dvh;overflow-x:hidden;-webkit-text-size-adjust:100%;padding-bottom:env(safe-area-inset-bottom,0)}
+#stars{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+main{position:relative;z-index:1;max-width:560px;margin:0 auto;padding:28px 20px 40px;text-align:center}
+
+/* Barrera Honmoon: arco de luz que se enciende al cargar */
+.honmoon{position:relative;width:min(86vw,340px);aspect-ratio:1;margin:8px auto 0}
+.honmoon svg{width:100%;height:100%;overflow:visible}
+.arc{fill:none;stroke-width:7;stroke-linecap:round;stroke-dasharray:420;stroke-dashoffset:420;animation:draw 2.2s ease-out forwards;filter:drop-shadow(0 0 8px currentColor)}
+.a1{stroke:var(--pink);color:var(--pink)} .a2{stroke:var(--violet);color:var(--violet);animation-delay:.25s} .a3{stroke:var(--cyan);color:var(--cyan);animation-delay:.5s}
+@keyframes draw{to{stroke-dashoffset:0}}
+.honmoon .mic{position:absolute;inset:0;display:grid;place-items:center;font-size:84px;filter:drop-shadow(0 0 18px var(--pink));animation:float 3.6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-8px)}}
+
+.kicker{font-family:var(--display);font-size:.95rem;color:var(--cyan);text-shadow:0 0 12px var(--cyan);margin-top:6px}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(2.5rem,13vw,4.2rem);line-height:.95;margin:10px 0 4px;color:#fff;text-shadow:0 0 6px #fff,0 0 22px var(--pink),0 0 48px var(--pink);animation:flick 5s infinite}
+@keyframes flick{0%,92%,100%{opacity:1}94%{opacity:.7}96%{opacity:1}98%{opacity:.8}}
+.apellido{font-size:.85rem;letter-spacing:.06em;opacity:.8}
+.cumple{font-family:var(--display);font-size:1.15rem;margin:18px 0 6px;color:var(--gold);text-shadow:0 0 14px rgba(255,209,102,.7)}
+.lead{font-size:1.05rem;line-height:1.55;max-width:34ch;margin:0 auto}
+
+/* Cuenta regresiva */
+.count{display:flex;justify-content:center;gap:10px;margin:26px 0 8px}
+.count div{min-width:66px;padding:10px 6px;border:2px solid var(--violet);border-radius:14px;background:rgba(139,61,255,.14);box-shadow:0 0 16px rgba(139,61,255,.45)}
+.count b{display:block;font-family:var(--display);font-weight:400;font-size:1.7rem;color:var(--cyan);text-shadow:0 0 10px var(--cyan)}
+.count span{font-size:.72rem;opacity:.85}
+
+/* Entrada tipo boleto de concierto */
+.ticket{position:relative;margin:26px 0;padding:24px 20px;border-radius:22px;background:linear-gradient(160deg,rgba(255,46,147,.2),rgba(139,61,255,.22));border:2px solid var(--pink);box-shadow:0 0 28px rgba(255,46,147,.4),inset 0 0 30px rgba(255,46,147,.12);text-align:left}
+.ticket::before,.ticket::after{content:"";position:absolute;top:50%;width:26px;height:26px;border-radius:50%;background:var(--bg);border:2px solid var(--pink);transform:translateY(-50%)}
+.ticket::before{left:-15px;clip-path:inset(0 0 0 50%)} .ticket::after{right:-15px;clip-path:inset(0 50% 0 0)}
+.row{display:flex;gap:14px;align-items:flex-start;padding:10px 0}
+.row+.row{border-top:2px dashed rgba(255,255,255,.22)}
+.ico{font-size:1.7rem;line-height:1}
+.row h2{font-family:var(--display);font-weight:400;font-size:1rem;color:var(--gold)}
+.row p{font-size:1.05rem;line-height:1.4}
+.row small{opacity:.8;font-weight:600}
+
+.btns{display:grid;gap:12px;margin-top:6px}
+.btn{display:block;padding:15px 18px;border-radius:999px;font-family:var(--display);font-size:1rem;color:#fff;text-decoration:none;border:0;cursor:pointer;transition:transform .15s,box-shadow .15s}
+.btn:hover,.btn:focus-visible{transform:scale(1.03);outline:3px solid #fff;outline-offset:3px}
+.b-wa{background:linear-gradient(90deg,#1fd865,#10b981);box-shadow:0 0 22px rgba(31,216,101,.55)}
+.b-map{background:linear-gradient(90deg,var(--violet),#5b6cff);box-shadow:0 0 22px rgba(139,61,255,.6)}
+.b-cal{background:transparent;border:2px solid var(--cyan);color:var(--cyan);box-shadow:0 0 16px rgba(37,229,255,.4)}
+
+.dress{margin:28px 0 6px;font-size:1rem;line-height:1.5}
+.dress b{color:var(--cyan)}
+footer{margin-top:30px;font-size:.78rem;opacity:.7;line-height:1.6}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto}.arc{stroke-dashoffset:0}.pop{opacity:1;transform:none}}
+
+/* ===== Pantalla de apertura ===== */
+html,body{height:auto}
+body.locked{overflow:hidden;height:100vh;height:100dvh}
+#gate{position:fixed;inset:0;z-index:50;display:grid;place-items:center;overflow:hidden;transition:visibility 0s 1.3s}
+#gate.open{visibility:hidden}
+.door{position:absolute;top:0;bottom:0;width:50.5%;background:linear-gradient(160deg,#2a0b63,#0d0524 70%);transition:transform 1.2s cubic-bezier(.7,0,.2,1)}
+.door.l{left:0;border-right:3px solid var(--pink);box-shadow:8px 0 30px rgba(255,46,147,.6)}
+.door.r{right:0;border-left:3px solid var(--cyan);box-shadow:-8px 0 30px rgba(37,229,255,.6)}
+#gate.open .l{transform:translateX(-102%)} #gate.open .r{transform:translateX(102%)}
+.gate-in{position:relative;z-index:2;text-align:center;padding:20px;transition:opacity .4s,transform .6s}
+#gate.open .gate-in{opacity:0;transform:scale(1.4)}
+.gate-in .kicker{margin:0 0 6px}
+.gate-in h2{font-family:var(--display);font-weight:400;font-size:clamp(1.7rem,9vw,2.6rem);line-height:1.05;margin-bottom:6px;text-shadow:0 0 22px var(--pink)}
+.gate-in p.sub{font-size:1rem;margin-bottom:26px;opacity:.9}
+.orb{position:relative;width:min(58vw,210px);aspect-ratio:1;margin:0 auto 26px;border-radius:50%;display:grid;place-items:center;font-size:clamp(3.4rem,18vw,5.4rem);background:radial-gradient(circle,rgba(255,46,147,.35),rgba(139,61,255,.15) 65%,transparent 70%);animation:beat 1.4s ease-in-out infinite}
+.orb::before,.orb::after{content:"";position:absolute;inset:-8px;border-radius:50%;border:3px solid var(--pink);box-shadow:0 0 18px var(--pink),inset 0 0 18px var(--pink);animation:ring 2.4s linear infinite}
+.orb::after{border-color:var(--cyan);box-shadow:0 0 18px var(--cyan),inset 0 0 18px var(--cyan);animation-delay:1.2s}
+@keyframes ring{from{transform:scale(.8);opacity:1}to{transform:scale(1.35);opacity:0}}
+@keyframes beat{50%{transform:scale(1.06)}}
+.b-open{background:linear-gradient(90deg,var(--pink),var(--violet));box-shadow:0 0 28px rgba(255,46,147,.7);font-size:1.15rem;padding:17px 34px;animation:glow 1.6s ease-in-out infinite;-webkit-tap-highlight-color:transparent}
+
+#kara{position:fixed;left:0;right:0;bottom:calc(24px + env(safe-area-inset-bottom,0px));z-index:40;text-align:center;font-family:var(--display);font-size:clamp(1.2rem,6vw,1.8rem);color:var(--gold);text-shadow:0 0 14px var(--pink),0 0 4px #000;opacity:0;pointer-events:none;transition:opacity .35s;padding:0 14px}
+#kara.on{opacity:1}
+#snd{position:fixed;top:calc(12px + env(safe-area-inset-top,0px));right:12px;z-index:45;width:46px;height:46px;border-radius:50%;border:2px solid var(--cyan);background:rgba(13,5,36,.8);color:#fff;font-size:1.3rem;cursor:pointer;display:none}
+body.opened #snd{display:block}
+/* edad */
+.age{display:inline-grid;place-items:center;margin:14px 0 0;min-width:112px;padding:6px 22px 10px;border-radius:26px;border:3px solid var(--gold);background:rgba(255,209,102,.1);box-shadow:0 0 26px rgba(255,209,102,.55);animation:beat 1.6s ease-in-out infinite}
+.age b{font-family:var(--display);font-weight:400;font-size:4.6rem;line-height:1;color:#fff;text-shadow:0 0 16px var(--gold),0 0 36px var(--gold)}
+.age span{font-family:var(--display);font-size:1rem;color:var(--gold);margin-top:-2px}
+/* globos y entrada animada */
+#balloons{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.bl{position:absolute;bottom:-60px;font-size:2rem;animation:up linear infinite;filter:drop-shadow(0 0 8px rgba(255,46,147,.7))}
+@keyframes up{to{transform:translateY(-115vh) rotate(14deg)}}
+.pop{opacity:0;transform:translateY(28px) scale(.9)}
+body.opened .pop{animation:pop .8s cubic-bezier(.2,1.4,.4,1) forwards;animation-delay:calc(var(--i)*.18s + .9s)}
+@keyframes pop{to{opacity:1;transform:none}}
+body.opened .honmoon .mic{animation:float 3.6s ease-in-out infinite,spin 1.2s ease-out 1}
+@keyframes spin{from{transform:rotate(-25deg) scale(.4)}}
+@media (max-width:360px){.count div{min-width:58px}.count{gap:6px}}
+@media (max-height:600px){.orb{width:130px;margin-bottom:14px}.gate-in p.sub{margin-bottom:12px}}
+
+/* ===== Imágenes ===== */
+.gate-bg{position:absolute;inset:0;z-index:0;background:linear-gradient(rgba(13,5,36,.5),rgba(13,5,36,.86)),url(img/hero.jpg) center/cover no-repeat;transition:opacity 1.1s .15s}
+#gate.open .gate-bg{opacity:0}
+.door{background:linear-gradient(160deg,rgba(42,11,99,.4),rgba(13,5,36,.4))}
+.hero{position:relative;max-width:900px;margin:4px auto 10px;border-radius:22px;overflow:hidden;aspect-ratio:16/9;border:3px solid var(--pink);background:var(--bg2);box-shadow:0 0 28px rgba(255,46,147,.65),0 0 70px rgba(139,61,255,.45)}
+.hero img{display:block;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 62%,rgba(13,5,36,.7))}
+.shine{position:absolute;z-index:2;top:0;bottom:0;left:0;width:35%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.38),transparent);transform:translateX(-160%) skewX(-15deg);animation:sh 4.8s ease-in-out 2s infinite}
+@keyframes sh{to{transform:translateX(420%) skewX(-15deg)}}
+.gal{margin:36px -8px 4px}
+.gal h3{font-family:var(--display);font-weight:400;font-size:1.25rem;color:var(--gold);text-shadow:0 0 14px rgba(255,209,102,.7)}
+.gal p.s{font-size:.95rem;opacity:.85;margin-top:4px}
+.cards{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:20px 14px 28px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.cards::-webkit-scrollbar{display:none}
+.card{flex:0 0 64%;max-width:250px;scroll-snap-align:center;border-radius:18px;padding:6px;background:linear-gradient(120deg,var(--pink),var(--violet),var(--cyan),var(--gold),var(--pink));background-size:300% 100%;animation:holo 6s linear infinite;box-shadow:0 0 22px rgba(139,61,255,.65);transform:rotate(var(--r,0deg));transition:transform .3s;margin:0;text-align:center}
+.card:hover{transform:rotate(0) translateY(-8px) scale(1.04)}
+.card img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:13px;background:var(--bg2)}
+.card figcaption{font-size:.7rem;padding:6px 2px 1px;color:#fff;font-weight:800;text-shadow:0 0 5px #000}
+@keyframes holo{to{background-position:300% 0}}
+.credits{margin-top:12px;font-size:.72rem;opacity:.65;line-height:1.5}
+.side .dress{margin-top:22px}
+@media (min-width:760px){
+  .cards{overflow:visible;flex-wrap:wrap;justify-content:center;padding:26px 10px 30px}
+  .card{flex:0 0 calc(20% - 14px);max-width:none}
+}
+@media (min-width:900px){
+  main{max-width:1040px;padding-top:36px}
+  h1{font-size:6rem}.apellido{font-size:1rem}.lead{max-width:52ch;font-size:1.15rem}
+  .cols{display:grid;grid-template-columns:1.1fr 1fr;gap:34px;align-items:center;margin-top:10px}
+  .ticket{margin:0}.side .dress{margin-top:22px}
+  .count div{min-width:84px}.count b{font-size:2.1rem}
+}
+
+.frases{margin:34px auto 0;max-width:560px}
+.quote{position:relative;min-height:128px;display:grid;place-items:center;padding:26px 22px 20px;border-radius:22px;border:2px solid var(--cyan);background:linear-gradient(160deg,rgba(37,229,255,.12),rgba(139,61,255,.22));box-shadow:0 0 24px rgba(37,229,255,.4)}
+.quote::before{content:"\201C";position:absolute;top:-4px;left:16px;font-family:var(--display);font-size:3.6rem;line-height:1;color:var(--pink);text-shadow:0 0 14px var(--pink)}
+.quote p{font-family:var(--display);font-size:clamp(1.05rem,4.8vw,1.5rem);line-height:1.3;text-shadow:0 0 12px rgba(255,46,147,.6);transition:opacity .5s,transform .5s}
+.quote p.out{opacity:0;transform:translateY(10px)}
+.dots{display:flex;justify-content:center;gap:8px;margin-top:14px}
+.dots i{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.3);transition:.3s}
+.dots i.on{background:var(--pink);box-shadow:0 0 10px var(--pink);transform:scale(1.35)}
+footer{font-family:var(--display);font-size:1rem;line-height:1.7;opacity:1;color:var(--gold);text-shadow:0 0 12px rgba(255,209,102,.6);margin-top:26px}
+
+/* Centrado de la pantalla de apertura */
+#gate{display:flex;align-items:center;justify-content:center;padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px)}
+.gate-in{display:flex;flex-direction:column;align-items:center;justify-content:center;width:min(92vw,520px);margin:0 auto;text-align:center}
+.gate-in .orb{margin:0 auto 26px}
+.gate-in .b-open{display:inline-block;margin:0 auto;width:auto;max-width:100%;text-align:center}
+@media (max-height:600px){.gate-in .orb{margin-bottom:14px}}
+
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(120% 80% at 50% 0%,var(--bg2),var(--bg) 60%)}
+@keyframes glow{50%{box-shadow:0 0 46px rgba(255,46,147,1)}}
+.lite .card{animation:none}
+.bl{will-change:transform}
+.lite .bl{filter:none!important}
+.lite .orb::after,.lite .shine,.lite .door{box-shadow:none}
+.lite .orb::after,.lite .shine{display:none}
+.lite .orb{animation:none}.lite .age{animation:none}.lite .b-open{animation:none}
+
+/* El nombre aparece y luego parpadea como letrero de neón */
+body.opened h1.pop{animation:pop .8s cubic-bezier(.2,1.4,.4,1) calc(var(--i)*.18s + .9s) forwards,flick 5s linear calc(var(--i)*.18s + 2.6s) infinite}
+.lite body.opened h1.pop{animation:pop .8s cubic-bezier(.2,1.4,.4,1) calc(var(--i)*.18s + .9s) forwards}
+/* ===== Nombre completo ===== */
+h1{font-size:clamp(1.9rem,10vw,4.2rem);line-height:1}
+.apellido{font-size:clamp(1.05rem,5vw,1.5rem);font-weight:800;letter-spacing:.14em;color:var(--cyan);opacity:1;margin-top:6px;text-shadow:0 0 12px rgba(37,229,255,.7)}
+/* ===== Danna sosteniendo el cartel ===== */
+.kid{--w:min(62vw,250px);position:relative;width:var(--w);margin:22px auto 8px}
+.kid::before{content:"";position:absolute;left:50%;top:14%;width:128%;aspect-ratio:1;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle,rgba(255,46,147,.5),rgba(139,61,255,.28) 45%,transparent 70%)}
+.kid::after{content:"";position:absolute;left:-6%;right:-6%;bottom:-8px;height:24px;border-radius:50%;background:radial-gradient(ellipse,rgba(37,229,255,.75),transparent 70%)}
+.kid-in{position:relative;z-index:1;padding-top:calc(var(--w)*.27);animation:hop 2.4s ease-in-out infinite}
+@keyframes hop{50%{transform:translateY(-7px)}}
+.kid .girl{position:relative;z-index:2;display:block;width:100%;height:auto}
+.kid .age{position:absolute;z-index:1;left:5%;top:0;width:90%;height:calc(var(--w)*.43);min-width:0;margin:0;padding:0 0 calc(var(--w)*.13);display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(-4deg);animation:none;border-radius:20px;border:3px solid var(--gold);background:linear-gradient(160deg,rgba(255,46,147,.9),rgba(139,61,255,.92));box-shadow:0 0 24px rgba(255,209,102,.7),inset 0 0 18px rgba(255,255,255,.22)}
+.kid .age b{font-size:calc(var(--w)*.2);line-height:.95}
+.kid .age span{font-size:calc(var(--w)*.075);margin-top:2px;color:#fff;text-shadow:0 0 10px var(--gold)}
+.sp{position:absolute;z-index:3;font-style:normal;font-size:1.3rem;animation:tw 2.2s ease-in-out infinite}
+.s1{left:-14%;top:42%}.s2{right:-12%;top:30%;animation-delay:.6s}.s3{left:-8%;top:72%;animation-delay:1.1s}.s4{right:-10%;top:62%;animation-delay:1.6s}
+@keyframes tw{50%{opacity:.25;transform:scale(.7)}}
+.lite .sp,.lite .kid-in{animation:none}
+@media (min-width:900px){.kid{--w:300px}.sp{font-size:1.6rem}h1{font-size:5.2rem}.apellido{font-size:1.7rem}}
+/* ===== La cumpleañera ===== */
+.star{margin:40px auto 0;max-width:420px}
+.star h3{font-family:var(--display);font-weight:400;font-size:1.25rem;color:var(--gold);text-shadow:0 0 14px rgba(255,209,102,.7);margin-bottom:18px}
+.pc{position:relative;width:min(78vw,330px);aspect-ratio:1200/1518;margin:0 auto;padding:6px;border-radius:24px;background:linear-gradient(120deg,var(--pink),var(--violet),var(--cyan),var(--gold),var(--pink));box-shadow:0 0 30px rgba(255,46,147,.6),0 0 60px rgba(139,61,255,.4);transform:rotate(-2deg)}
+.pc-bg{position:absolute;inset:6px;border-radius:19px;background:radial-gradient(circle at 50% 38%,rgba(255,255,255,.38),transparent 46%),repeating-conic-gradient(from 0deg at 50% 42%,#ff2e93 0 9deg,#8b3dff 9deg 18deg)}
+.pc img{position:absolute;inset:6px;width:calc(100% - 12px);height:calc(100% - 12px);object-fit:cover;object-position:center bottom;border-radius:19px}
+.pc figcaption{position:absolute;left:16px;right:16px;bottom:16px;z-index:2;padding:9px 10px;border-radius:14px;background:rgba(13,5,36,.8);border:2px solid var(--gold);font-family:var(--display);font-size:.95rem;color:var(--gold);text-shadow:0 0 10px rgba(255,209,102,.6)}
+@media (min-width:900px){.pc{width:360px}}
+
+/* ===== SHOW EXTRA ===== */
+#fx{position:fixed;inset:0;width:100%;height:100%;z-index:35;pointer-events:none}
+.beam{top:-8%;width:42vw;height:125%;transform-origin:50% 0;clip-path:polygon(44% 0,56% 0,100% 100%,0 100%);pointer-events:none;animation:sweep 8s ease-in-out infinite alternate}
+@keyframes sweep{from{transform:rotate(calc(var(--r)*-1))}to{transform:rotate(var(--r))}}
+.lt{display:inline-block;animation:wave 2.6s ease-in-out infinite}
+@keyframes wave{40%{transform:translateY(-8px)}}
+.hero img{animation:kb 16s ease-in-out infinite alternate}
+@keyframes kb{to{transform:scale(1.1)}}
+.eq{position:absolute;left:0;right:0;bottom:0;height:34%;display:flex;align-items:flex-end;gap:3px;padding:0 6px;z-index:3;pointer-events:none}
+.eq i{flex:1;height:100%;transform-origin:bottom;transform:scaleY(.15);background:linear-gradient(0deg,var(--pink),var(--cyan));border-radius:3px 3px 0 0;opacity:.7;animation:eq .8s ease-in-out infinite alternate}
+@keyframes eq{to{transform:scaleY(1)}}
+.shoot{position:fixed;z-index:1;height:2px;width:130px;background:linear-gradient(90deg,transparent,#fff);border-radius:2px;pointer-events:none;animation:shoot 1.1s ease-out forwards}
+@keyframes shoot{from{transform:translate(0,0) rotate(151deg);opacity:1}to{transform:translate(-420px,230px) rotate(151deg);opacity:0}}
+.flash{position:fixed;inset:0;z-index:60;background:#fff;opacity:0;pointer-events:none}
+body.opened .flash{animation:fl 1s ease-out}
+@keyframes fl{0%{opacity:.6}100%{opacity:0}}
+.wave{position:fixed;left:50%;top:50%;width:40px;height:40px;margin:-20px;border-radius:50%;border:4px solid var(--pink);box-shadow:0 0 30px var(--pink),inset 0 0 30px var(--pink);z-index:59;opacity:0;pointer-events:none}
+.wave.w2{border-color:var(--cyan);box-shadow:0 0 30px var(--cyan),inset 0 0 30px var(--cyan)}
+body.opened .wave{animation:wv 1.3s ease-out}body.opened .w2{animation-delay:.2s}
+@keyframes wv{0%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(40)}}
+.tk{animation:tk .4s}
+@keyframes tk{30%{transform:scale(1.28);color:#fff}}
+.rv{opacity:0;transform:translate(var(--dx,0),40px) scale(.92);transition:opacity .9s,transform .9s cubic-bezier(.2,1.2,.4,1)}
+.rv.in{opacity:1;transform:none}
+.card{animation:holo 6s linear infinite}
+@keyframes bob{50%{translate:0 -9px}}
+.lite .card{animation:none}
+.lite .eq,.lite .beam,.lite .shoot{display:none}
+.lite .hero img,.lite .lt{animation:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}.eq,.beam,.shoot{display:none}}
+
+/* Fotos de Danna dentro de las tarjetas */
+.card.ph img{object-position:center bottom;background:radial-gradient(circle at 50% 40%,rgba(255,255,255,.38),transparent 46%),repeating-conic-gradient(from 0deg at 50% 45%,#ff2e93 0 9deg,#8b3dff 9deg 18deg)}
+.card.ph.k img{object-fit:contain}
+.card img{height:auto}
+html{overflow-x:hidden}
+main{overflow-x:clip}
+
+.down{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom,0px));transform:translateX(-50%) translateY(24px);z-index:44;display:flex;flex-direction:column;align-items:center;gap:4px;padding:10px 20px 8px;border-radius:999px;border:2px solid var(--cyan);background:rgba(13,5,36,.85);color:#fff;font-family:var(--display);font-size:.85rem;box-shadow:0 0 18px rgba(37,229,255,.6);opacity:0;pointer-events:none;transition:opacity .5s,transform .5s;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.down.show{opacity:1;transform:translateX(-50%);pointer-events:auto}
+.down .chev{width:11px;height:11px;border-right:3px solid var(--cyan);border-bottom:3px solid var(--cyan);transform:rotate(45deg);margin-top:-4px;animation:nudge 1.1s ease-in-out infinite}
+@keyframes nudge{50%{transform:translateY(6px) rotate(45deg)}}
+@media (prefers-reduced-motion:reduce){.down .chev{animation:none}}
+.hero img{animation:none}
+@media (hover:none){.card{animation:none}}
+</style>
+</head>
+<body class="locked">
+<div id="gate" role="dialog" aria-label="Abrir invitación">
+  <div class="gate-bg"></div>
+  <div class="door l"></div><div class="door r"></div>
+  <div class="gate-in">
+    <p class="kicker">★ Cazadoras del Honmoon ★</p>
+    <h2>¡Danna te invita!</h2>
+    <p class="sub">Toca para abrir tu invitación</p>
+    <div class="orb" aria-hidden="true">🎤</div>
+    <button class="btn b-open" id="openBtn" type="button">Abrir invitación</button>
+  </div>
+</div>
+<div id="balloons" aria-hidden="true"></div>
+<button id="snd" type="button" aria-label="Activar o silenciar la música">🔊</button>
+<button id="down" class="down" type="button" aria-label="Desliza hacia abajo"><span>Desliza hacia abajo</span><i class="chev"></i></button>
+<div id="kara" aria-live="polite"></div>
+<canvas id="stars" aria-hidden="true"></canvas>
+<main>
+  <figure class="hero pop" style="--i:0"><img src="img/hero.jpg" width="1400" height="788" alt="Las tres cazadoras cantando en el escenario con micrófonos y luces moradas" decoding="async"><span class="shine"></span></figure>
+
+  <p class="kicker pop" style="--i:1">★ Cazadoras del Honmoon ★</p>
+  <h1 class="pop" style="--i:2">DANNA ROCIO</h1>
+  <p class="apellido pop" style="--i:2">ESPEJO ARUQUIPA</p>
+  <div class="age pop" style="--i:3"><b>5</b><span>añitos</span></div>
+  <p class="cumple pop" style="--i:4">¡Está de cumpleaños!</p>
+  <p class="lead pop" style="--i:5">Súmate al gran concierto de sus 5 años: música, baile, luces y mucha diversión. ¡Tú eres parte del equipo!</p>
+
+  <div class="count pop" style="--i:6" id="count" role="timer" aria-label="Cuenta regresiva para la fiesta">
+    <div><b id="d">00</b><span>días</span></div>
+    <div><b id="h">00</b><span>horas</span></div>
+    <div><b id="m">00</b><span>min</span></div>
+    <div><b id="s">00</b><span>seg</span></div>
+  </div>
+
+  <div class="cols">
+  <section class="ticket pop" style="--i:7" aria-label="Datos de la fiesta">
+    <div class="row"><span class="ico">📅</span><div><h2>Fecha</h2><p>Sábado 7 de noviembre de 2026</p></div></div>
+    <div class="row"><span class="ico">⏰</span><div><h2>Hora</h2><p>16:00 (4:00 p. m.)</p></div></div>
+    <div class="row"><span class="ico">🎈</span><div><h2>Lugar</h2><p>Salón Infantil Chiquimundo</p></div></div>
+    <div class="row"><span class="ico">📍</span><div><h2>Dirección</h2><p>Zona 16 de Julio, calle Víctor Gutiérrez #3124, entre Fornier y Nisthaus</p></div></div>
+  </section>
+
+  <div class="side">
+  <div class="btns pop" style="--i:8">
+    <a class="btn b-map" id="map" href="#" target="_blank" rel="noopener">Cómo llegar</a>
+    <button class="btn b-cal" id="cal" type="button">Guardar en mi calendario</button>
+  </div>
+  </div>
+  </div>
+
+  <section class="gal pop" style="--i:10" aria-label="Las cazadoras">
+    <h3>Las cazadoras te esperan</h3>
+    <p class="s">Desliza y conoce al equipo de la fiesta</p>
+    <div class="cards">
+      <figure class="card ph k" style="--r:-3deg"><img src="img/kid.webp" width="480" height="877" loading="lazy" decoding="async" alt="Danna saltando feliz con los brazos en alto"><figcaption>★ Fiesta de Danna ★</figcaption></figure>
+      <figure class="card ph" style="--r:2deg"><img src="img/danna.webp" width="620" height="784" loading="lazy" decoding="async" alt="Danna sonriendo con su moño azul"><figcaption>★ 5 añitos ★</figcaption></figure>
+      <figure class="card" style="--r:-2deg"><img src="img/c3.jpg" loading="lazy" alt="Cazadora de pelo rosa cantando"><figcaption>★ Solo diversión ★</figcaption></figure>
+      <figure class="card" style="--r:3deg"><img src="img/f1.jpg" loading="lazy" alt="Ilustración de las tres cazadoras posando juntas"><figcaption>★ Magia K-pop ★</figcaption></figure>
+      <figure class="card" style="--r:-3deg"><img src="img/f2.jpg" loading="lazy" alt="Ilustración de las tres cazadoras en pose de grupo"><figcaption>★ ¡A cantar! ★</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="frases pop" style="--i:11" aria-label="Frases de cumpleaños">
+    <div class="quote"><p id="qt">Cinco años de magia, música y sueños.</p></div>
+    <div class="dots" id="dots" aria-hidden="true"></div>
+  </section>
+
+  <footer>¡Feliz cumpleaños, Danna! 🎂✨<br>Te esperamos con mucha ilusión 💖</footer>
+</main>
+
+<script>
+/* ===== Datos editables ===== */
+const MAP_QUERY = "Salón Infantil Chiquimundo, calle Víctor Gutiérrez 3124, 16 de Julio";
+const FECHA = new Date("2026-11-07T16:00:00");   // hora local del invitado
+/* ============================ */
+
+// Botones
+document.getElementById("map").href = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(MAP_QUERY);
+
+// Calendario (.ics)
+document.getElementById("cal").addEventListener("click", () => {
+  const f = d => d.toISOString().replace(/[-:]/g,"").split(".")[0] + "Z";
+  const fin = new Date(FECHA.getTime() + 3*3600*1000);
+  const ics = ["BEGIN:VCALENDAR","VERSION:2.0","BEGIN:VEVENT",
+    "DTSTART:"+f(FECHA),"DTEND:"+f(fin),
+    "SUMMARY:Cumpleaños #5 de Danna 🎤",
+    "LOCATION:Salón Infantil Chiquimundo, calle Víctor Gutiérrez #3124, 16 de Julio",
+    "DESCRIPTION:Fiesta temática K-pop. ¡Te esperamos!",
+    "END:VEVENT","END:VCALENDAR"].join("\r\n");
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([ics],{type:"text/calendar"}));
+  a.download = "cumple-danna.ics"; a.click();
+});
+
+// Cuenta regresiva
+const $ = id => document.getElementById(id), p = n => String(n).padStart(2,"0");
+function tick(){
+  let t = Math.max(0, FECHA - Date.now()) / 1000;
+  $("d").textContent = p(Math.floor(t/86400)); $("h").textContent = p(Math.floor(t%86400/3600));
+  $("m").textContent = p(Math.floor(t%3600/60)); $("s").textContent = p(Math.floor(t%60)); { const sb=$("s"); sb.classList.remove("tk"); void sb.offsetWidth; sb.classList.add("tk"); }
+}
+tick(); setInterval(tick, 1000);
+
+// Estrellas, globos y confeti: completos en celulares normales, versión ligera solo en los débiles
+// (?lite fuerza el modo ligero, ?full fuerza el completo)
+const Q=location.search;
+const LITE=Q.includes("lite")?true:Q.includes("full")?false:((navigator.hardwareConcurrency||8)<=4||(navigator.deviceMemory?navigator.deviceMemory<=4:false));
+const RM=matchMedia("(prefers-reduced-motion: reduce)").matches;
+if(LITE) document.documentElement.classList.add("lite");
+const cv=$("stars"), cx=cv.getContext("2d"); const cv2=document.createElement("canvas"); cv2.id="fx"; document.body.appendChild(cv2); const fc=cv2.getContext("2d"); let dirty=false; let W,H,S=[],conf=[],lastF=0;
+const cols=["#ff2e93","#25e5ff","#ffd166","#ffffff","#8b3dff"];
+function size(){ W=cv.width=cv2.width=innerWidth; H=cv.height=cv2.height=innerHeight;
+  S=Array.from({length:Math.min(LITE?14:55,Math.round(W*H/(LITE?14000:12000)))},()=>({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.8+.4,c:cols[Math.random()*5|0],v:Math.random()*.4+.1,o:Math.random()*6})); }
+function burst(){ if(RM) return; const n=LITE?36:70; for(let i=0;i<n;i++) conf.push({x:W/2,y:H*.55,vx:(Math.random()-.5)*14,vy:-Math.random()*15-4,r:Math.random()*6+3,c:cols[i%5],a:Math.random()*6,va:(Math.random()-.5)*.4,l:240+Math.random()*80}); }
+function draw(t){
+  const dt=t-lastF;
+  if(dt<(LITE?66:22)){ requestAnimationFrame(draw); return; }
+  const k=Math.min(3,(dt||16.7)/16.7); lastF=t;
+  cx.clearRect(0,0,W,H);
+  for(const s of S){ s.y+=s.v*k; if(s.y>H) s.y=-4;
+    cx.globalAlpha=.45+.55*Math.abs(Math.sin(t/900+s.o)); cx.fillStyle=s.c;
+    if(!LITE){cx.shadowColor=s.c; cx.shadowBlur=5;}
+    cx.beginPath(); cx.arc(s.x,s.y,s.r,0,6.283); cx.fill(); }
+  cx.shadowBlur=0; cx.globalAlpha=1;
+  if(conf.length||dirty){ fc.clearRect(0,0,W,H); dirty=conf.length>0; }
+  for(let i=conf.length-1;i>=0;i--){ const q=conf[i]; q.vy+=.35*k; q.vx*=Math.pow(.99,k); q.x+=q.vx*k; q.y+=q.vy*k; q.a+=q.va*k; q.l-=k;
+    if(q.l<=0||q.y>H+20){conf.splice(i,1);continue}
+    fc.save(); fc.translate(q.x,q.y); fc.rotate(q.a); fc.fillStyle=q.c; fc.globalAlpha=Math.min(1,q.l/40); fc.fillRect(-q.r,-q.r/2,q.r*2,q.r); fc.restore(); }
+  if(!RM||conf.length) requestAnimationFrame(draw); }
+addEventListener("resize",size); size(); requestAnimationFrame(draw);
+
+/* ===== Abrir invitación + música + confeti ===== */
+const AC = window.AudioContext || window.webkitAudioContext;
+let ctxA, playing = false, timers = [], useSynth = false, mp3 = null;
+const kara = document.getElementById("kara");
+const NOTES = [[392,.75],[392,.25],[440,1],[392,1],[523,1],[494,2],
+               [392,.75],[392,.25],[440,1],[392,1],[587,1],[523,2],
+               [392,.75],[392,.25],[784,1],[659,1],[523,1],[494,1],[440,1],
+               [698,.75],[698,.25],[659,1],[523,1],[587,1],[523,2]];
+const LYR = {0:"¡Cumpleaños feliz!",6:"¡Cumpleaños feliz!",12:"Te deseamos todos",19:"¡Cumpleaños feliz, Danna!"};
+function bell(f,t,d){
+  [[1,.5],[2,.18],[3,.07]].forEach(([m,g])=>{
+    const o=ctxA.createOscillator(), v=ctxA.createGain();
+    o.type = m===1?"triangle":"sine"; o.frequency.value=f*m;
+    v.gain.setValueAtTime(0,t); v.gain.linearRampToValueAtTime(g,t+.01);
+    v.gain.exponentialRampToValueAtTime(.0008,t+Math.max(d,.5)+.5);
+    o.connect(v); v.connect(ctxA.destination); o.start(t); o.stop(t+d+1.1);
+  });
+}
+function synth(){
+  if(!AC) return; stopAll();
+  ctxA = ctxA || new AC(); if(ctxA.resume) ctxA.resume();
+  useSynth = true; playing = true; setSnd();
+  const beat=.52; let t=ctxA.currentTime+.15, tot=0;
+  NOTES.forEach(([f,b],i)=>{
+    bell(f,t+tot*beat,b*beat);
+    if(LYR[i]) timers.push(setTimeout(()=>{kara.textContent=LYR[i];kara.classList.add("on")},(.15+tot*beat)*1000));
+    tot+=b;
+  });
+  timers.push(setTimeout(()=>{kara.classList.remove("on");playing=false;setSnd()},(.3+tot*beat+1.2)*1000));
+}
+function stopAll(){ timers.forEach(clearTimeout); timers=[]; kara.classList.remove("on");
+  if(mp3){mp3.pause();} if(ctxA && ctxA.state==="running" && useSynth){ctxA.close().then(()=>{}).catch(()=>{});ctxA=null;} playing=false; }
+function setSnd(){ document.getElementById("snd").textContent = playing?"🔊":"🔇"; }
+function playSong(){
+  // Si subes "cumple.mp3" junto al index.html, se usa esa grabación; si no, suena la melodía en cajita de música.
+  mp3 = new Audio("cumple.mp3"); let fell=false;
+  const fb=()=>{ if(!fell){fell=true; synth();} };
+  mp3.addEventListener("error",fb); mp3.addEventListener("ended",()=>{playing=false;setSnd()});
+  const p = mp3.play(); if(p && p.then){ p.then(()=>{playing=true;useSynth=false;setSnd()}).catch(fb); }
+}
+document.getElementById("snd").addEventListener("click",()=>{ if(playing){stopAll();setSnd();} else {playSong();} });
+
+// Globos de fondo
+(function(){ const b=document.getElementById("balloons"), E=["🎈","💖","⭐","🎤","✨","🎈","💜","🎵","🎶","🎈"], n=LITE?4:7;
+  for(let i=0;i<n;i++){ const e=document.createElement("span"); e.className="bl"; e.textContent=E[i%E.length];
+    e.style.left=(Math.random()*92)+"%"; e.style.animationDuration=(9+Math.random()*9)+"s"; e.style.animationDelay=(-Math.random()*14)+"s";
+    e.style.fontSize=(1.4+Math.random()*1.4)+"rem"; b.appendChild(e); } })();
+
+// Abrir
+let abierto=false;
+function abrir(){ if(abierto) return; abierto=true;
+  playSong();                       // el toque del usuario permite el audio en iPhone y Android
+  document.getElementById("gate").classList.add("open");
+  document.body.classList.add("opened"); document.body.classList.remove("locked");
+  scrollTo(0,0); burst(); if(!LITE){ setTimeout(burst,700); }
+  setTimeout(()=>{document.getElementById("gate").style.display="none"},1600);
+  if(navigator.vibrate) navigator.vibrate([60,40,60]);
+}
+document.getElementById("openBtn").addEventListener("click",abrir);
+
+// Frases de cumpleaños
+(function(){
+  const F=["Cinco años de magia, música y sueños.","Hoy brilla una estrella más en el escenario.","Que tu voz suene fuerte y tu sonrisa aún más.","Cada cumpleaños es un nuevo concierto: ¡a disfrutarlo!","Los sueños también cantan, y los tuyos recién empiezan.","Cinco velitas, mil sonrisas y un corazón lleno de luz.","Ser valiente, ser tú: ese es tu superpoder.","¡Feliz cumpleaños, Danna! Que sea un día mágico."];
+  const p=document.getElementById("qt"), d=document.getElementById("dots"); let i=0;
+  F.forEach(()=>d.appendChild(document.createElement("i"))); d.children[0].className="on";
+  setInterval(()=>{ p.classList.add("out"); setTimeout(()=>{ i=(i+1)%F.length; p.textContent=F[i];
+    [...d.children].forEach((e,k)=>e.className=k===i?"on":""); p.classList.remove("out"); },500); },4200);
+})();
+
+/* ===== SHOW EXTRA ===== */
+function fw(x,y,n){ const c1=cols[Math.random()*5|0], c2=cols[Math.random()*5|0];
+  for(let i=0;i<n;i++){ const a=Math.random()*6.283, v=2+Math.random()*6; conf.push({x,y,vx:Math.cos(a)*v,vy:Math.sin(a)*v,r:2+Math.random()*2.5,c:i%2?c1:c2,a:0,va:.25,l:70+Math.random()*30}); } }
+(function(){
+  ["flash","wave","wave w2"].forEach(c=>{ const d=document.createElement("div"); d.className=c; document.body.appendChild(d); });
+  const h=document.querySelector("h1");
+  if(!LITE&&!RM){
+    const hero=document.querySelector(".hero"), eq=document.createElement("div"); eq.className="eq";
+    for(let i=0;i<16;i++){ const b=document.createElement("i"); b.style.animationDuration=(.45+Math.random()*.9)+"s"; b.style.animationDelay=(-Math.random())+"s"; eq.appendChild(b); }
+    hero.appendChild(eq);
+    const beams=(host,pos)=>[["255,46,147","8%",-24,7],["37,229,255","58%",22,9]].forEach(([c,l,d,t])=>{ const b=document.createElement("div"); b.className="beam";
+      b.style.cssText="position:"+pos+";left:"+l+";z-index:"+(pos==="fixed"?0:1)+";background:linear-gradient(180deg,rgba("+c+","+(pos==="fixed"?.2:.34)+"),transparent 78%);--r:"+d+"deg;animation-duration:"+t+"s"; host.appendChild(b); });
+    beams(document.getElementById("gate"),"absolute");
+    setInterval(()=>{ if(!abierto||document.hidden) return; const e=document.createElement("div"); e.className="shoot";
+      e.style.left=(40+Math.random()*60)+"vw"; e.style.top=(Math.random()*30)+"vh"; document.body.appendChild(e); setTimeout(()=>e.remove(),1200); },12000);
+  }
+  if(!RM) addEventListener("pointerdown",e=>{ if(e.target.closest&&e.target.closest("#openBtn")) return; for(let i=0;i<(LITE?8:14);i++){ const a=Math.random()*6.283,v=2+Math.random()*5;
+      conf.push({x:e.clientX,y:e.clientY,vx:Math.cos(a)*v,vy:Math.sin(a)*v-2,r:2+Math.random()*3,c:cols[i%5],a:0,va:.3,l:50}); } },{passive:true});
+  if("IntersectionObserver" in window&&!RM){ const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } }),{threshold:.12});
+    document.querySelectorAll(".star,.gal,.frases").forEach((el,i)=>{ el.classList.remove("pop"); el.classList.add("rv"); el.style.setProperty("--dx",(i%2?70:-70)+"px"); io.observe(el); }); }
+})();
+const _abrir=abrir; abrir=function(){ _abrir(); setTimeout(()=>window.__showDown&&window.__showDown(),3200); if(!LITE){ setTimeout(()=>fw(W*.5,H*.22,28),1300); } };
+document.getElementById("openBtn").removeEventListener("click",_abrir); document.getElementById("openBtn").addEventListener("click",abrir);
+
+// Botón "Desliza hacia abajo": aparece al abrir y se oculta al empezar a bajar
+(function(){ const d=document.getElementById("down"); let on=false;
+  const upd=()=>{ const end=innerHeight+scrollY>=document.documentElement.scrollHeight-60; d.classList.toggle("show",on&&scrollY<=140&&!end); };
+  addEventListener("scroll",upd,{passive:true}); addEventListener("resize",upd);
+  d.addEventListener("click",()=>scrollBy({top:innerHeight*.85,behavior:"smooth"}));
+  window.__showDown=()=>{ on=true; upd(); };
+})();
+</script>
+</body>
+</html>
